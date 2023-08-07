@@ -1,0 +1,101 @@
+.banner_view {
+  position: relative;
+  top: -80px;
+  width: 100%;
+  background: rgb(249, 249, 250);
+  background-image: linear-gradient(
+    45deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(180deg 50% 98%) 10%,
+    hsl(180deg 57% 95%) 24%,
+    hsl(178deg 60% 88%) 39%,
+    hsl(172deg 73% 71%) 56%,
+    hsl(167deg 87% 53%) 71%,
+    hsl(183deg 91% 55%) 86%,
+    hsl(209deg 92% 66%) 96%,
+    hsl(236deg 93% 77%) 100%
+  );
+
+  .container {
+    .content {
+      .box:nth-child(1) {
+        width: 40%;
+        margin-top: 40px;
+      }
+      .box {
+        width: 50%;
+        .watch_btn {
+          margin-top: 50px;
+          a {
+            padding: 10px;
+            border: 1px solid var(--color-light-gray);
+            border-radius: 30px;
+            width: 250px;
+            .mui_icon {
+              font-size: 22px;
+            }
+            span {
+              font-size: 15px;
+            }
+          }
+          a:hover {
+            border: 1px solid var(--color-gray);
+          }
+        }
+        .header {
+          margin-top: 40px;
+          h1 {
+            font-size: 90px;
+            line-height: 100px;
+          }
+          h4 {
+            margin-top: 40px;
+            font-weight: 500;
+            font-size: 20px;
+          }
+        }
+        .form {
+          .form_group {
+            padding: 4px;
+            margin-top: 40px;
+            box-shadow: 1px 0.5px 3px -2px rgba(0, 0, 0, 0.57) inset;
+            -webkit-box-shadow: 1px 0.5px 3px -2px rgba(0, 0, 0, 0.57) inset;
+            -moz-box-shadow: 1px 0.5px 3px -2px rgba(0, 0, 0, 0.57) inset;
+            border-radius: 30px;
+            background-color: var(--color-white);
+            .input_box {
+              padding: 12px;
+              width: 60%;
+              font-size: 17px;
+              margin-left: 10px;
+              color: var(--color-gray);
+            }
+            .btn_primary {
+              padding: 12px 30px;
+              border-radius: 30px;
+            }
+            .btn_primary:hover {
+              background-color: var(--color-hover);
+            }
+          }
+        }
+        .small {
+          margin-top: 25px;
+          small {
+            font-size: 12px;
+          }
+        }
+      }
+      .box_slider {
+        max-height: 800px;
+        .mySwiper {
+          height: 100%;
+        }
+        img {
+          width: 300px;
+          height: 500px;
+        }
+      }
+    }
+  }
+}
